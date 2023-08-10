@@ -1,0 +1,58 @@
+
+.sellerform {
+    box-sizing: border-box;
+    padding: 2rem;
+    border: 1px solid black;
+    display: flex;
+    width: 100%;
+    font-weight: bolder;
+    background-color:rgb(192, 148, 200);
+    margin-top: 80px;
+}
+
+.inputdiv {
+    padding: 1rem;
+    font-weight: bolder;
+    border: 1px solid black;
+}
+
+.inputdiv input {
+    width: 80%
+}
+
+
+.sizes{
+    display: flex;
+    padding: 1rem;
+    font-weight: bolder;
+    border: 1px solid black
+    
+}
+.sizes label{
+    text-align: center;
+}
+
+
+.sizes input {
+    width: 90%
+}
+
+.indiSizes{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;  
+    padding: 0.2rem;
+}
+
+.sellerform button{
+    background-color:white;
+    font-weight: bolder;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-color:lightskyblue;
+    border-radius: 10px;
+    width: 100%;
+    height: 50%;
+}

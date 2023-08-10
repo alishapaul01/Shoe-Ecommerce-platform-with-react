@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the cart button */
+.cart-button {
+    justify-content: center;
+    width: 20%;
+    height: 5rem;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color:pink;
+    color: #fff;
+    border: 10px solid;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 550px;;
+}
+
+/* Style for the cart item */
+.singleCart--item {
+    border: 1px solid black;
+    padding: 1rem 0 1rem 0.4rem;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin: 1rem;
+}
+
+/* Style for child divs within the cart item */
+.singleCart--item div {
+    width: 20%;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
