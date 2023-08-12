@@ -1,51 +1,28 @@
 import Modal from '../UI/Modal';
-
 import CartItem from "./CartItem";
 import { useContext } from "react";
 import { ProductsContext } from "../Context/ProductContext";
+import classes from './Cart.module.css'
 
 
 const Cart = (props) => {
 	const { state } = useContext(ProductsContext);
-	const customStyles = {
-		content: {
-			top: "20%",
-			left: "20%",
-			right: "20%",
-			bottom: "20%",
-		},
-	};
+	
 	const onCloseHandler = (e) => {
 		props.setCart(false);
 	};
 	return (
-		<Modal
-			isOpen={props.isCart}
-			onRequestClose={() => {
-				props.setCart(false);
-			}}
-			style={customStyles}>
-			<h1 style={{ textAlign: "center" }}>Cart</h1>
+		<Modal><div className={classes.heading}>
+			<h1>Cart</h1>
+			</div>
 			<CartItem/>
-			<div
-				style={{
-					display: "flex",
-					justifyContent: "space-between",
-					padding: "0 1rem 0",
-					marginBottom: "1rem",
-				}}>
+			<div className={classes.total}>
 				<h1>Total Amount</h1>
 				<h1>{ Number(state.cartTotal)}</h1>
 			</div>
-			<div
-				style={{
-					display: "flex",
-					justifyContent: "flex-end",
-				}}>
+			<div className={classes.button}>
 				<button onClick={onCloseHandler}>Close</button>
-				<button style={{ marginLeft: "1rem" }}>
-					Order
-				</button>
+				<button>Order</button>
 			</div>
 		</Modal>
 	);

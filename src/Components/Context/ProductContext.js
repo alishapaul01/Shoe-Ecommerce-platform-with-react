@@ -5,7 +5,7 @@ export const ProductsContext = React.createContext();
 let tempproducts = [
 	{
 		id: "m1",
-		ShoeName: "adidas",
+		ShoeName: "Adidas",
 		description: "100% cotton",
 		price: 1000,
 		large: 97,
@@ -14,7 +14,7 @@ let tempproducts = [
 	},
 	{
 		id: "m2",
-		ShoeName: "nike",
+		ShoeName: "Nike",
 		description: "Lightweight and durable",
 		price: 2000,
 		large: 120,
@@ -23,7 +23,7 @@ let tempproducts = [
 	},
 	{
 		id: "m3",
-		ShoeName: "puma",
+		ShoeName: "Puma",
 		description: "Comfortable and stylish",
 		price: 3000,
 		large: 80,
@@ -33,25 +33,7 @@ let tempproducts = [
 
 ];
 
-let tempCartItmes = [
-	{
-		id: "m6",
-		ShoeName: "Armani Shoes",
-		large: 2,
-		small: 4,
-		medium: 3,
-		price: 5000,
-	},
-	{
-		id: "m7",
-		ShoeName: "coasters",
-		description: "Everyday shoes",
-		price: 1000,
-		large: 1,
-		small: 1,
-		medium: 0,
-	},
-];
+let tempCartItmes=[]
 const reducer = (state, action) => {
 	switch (action.type) {
 		case "INC_CART_SIZE": {
@@ -124,7 +106,7 @@ export const ProductsContextProvider = (props) => {
 		itemsInCart: 0,
 		products: tempproducts,
 		cartItems: tempCartItmes,
-		cartTotal: 47000,
+		cartTotal: 0,
 	});
 	return (
 		<ProductsContext.Provider value={{ state, Dispatch }}>

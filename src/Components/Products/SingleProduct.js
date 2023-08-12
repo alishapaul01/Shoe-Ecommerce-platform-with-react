@@ -1,7 +1,8 @@
-import "./SingleProduct.css";
+
 import React, { useReducer } from "react";
 import { useContext } from "react";
-import { ProductsContext } from '../Context/ProductContext'
+import { ProductsContext } from '../Context/ProductContext';
+import classes from './SingleProduct.module.css';
 const sizeReducer = (state, action) => {
 	switch (action.type) {
 		case "SMALL_COUNT_DEC": {
@@ -73,13 +74,13 @@ const SingleProduct = (props) => {
 		sizeDispatch({ type: "MEDIUM_COUNT_DEC" });
 	};
 	return (
-		<div className="product">
-			<div className="product--details">
+		<div className={classes.product}>
+			<div className={classes.details}>
 				<h3>{props.ShoeName}</h3>
 				<h3>{props.description}</h3>
 				<h3>{props.price}</h3>
 			</div>
-			<div className="product--buttons">
+			<div className={classes.buttons}>
 				<button onClick={onLargeClick}>
 					Buy large ({sizeState.largeCount})
 				</button>

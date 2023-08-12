@@ -7,14 +7,15 @@
     margin-top: 2rem;
 }
 
-.product--details{
+.details{
 display: flex;
 justify-content:space-between;
-width:50%
+width:100%
 }
 
-.product--buttons{
-    display: flex;
- justify-content: space-evenly;
- width:50%;
+.buttons{
+display: flex;
+justify-content: space-evenly;
+width:50%;
+border-radius: 20px;
 }
