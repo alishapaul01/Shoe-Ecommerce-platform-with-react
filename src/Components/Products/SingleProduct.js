@@ -41,14 +41,14 @@ const SingleProduct = (props) => {
 		console.log(props);
 		Dispatch({
 			type: "INC_CART_TOTAL",
-			newPrice: props.price,
+			newPrice: +props.price,
 		});
 		sizeDispatch({ type: "SMALL_COUNT_DEC" });
 	};
 	const onLargeClick = (e) => {
 		Dispatch({
 			type: "INC_CART_TOTAL",
-			newPrice: props.price,
+			newPrice: +props.price,
 		});
 		Dispatch({ type: "INC_CART_SIZE" });
 		Dispatch({
@@ -68,7 +68,7 @@ const SingleProduct = (props) => {
 		});
 		Dispatch({
 			type: "INC_CART_TOTAL",
-			newPrice: props.price,
+			newPrice: +props.price,
 		});
 
 		sizeDispatch({ type: "MEDIUM_COUNT_DEC" });

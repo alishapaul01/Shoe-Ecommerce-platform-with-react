@@ -33,7 +33,7 @@ let tempproducts = [
 
 ];
 
-let tempCartItmes=[]
+let tempCartItmes=[];
 const reducer = (state, action) => {
 	switch (action.type) {
 		case "INC_CART_SIZE": {
@@ -89,7 +89,7 @@ const reducer = (state, action) => {
 				newArr = [...state.cartItems, newProd];
 			}
 
-			return { ...state, cartItems: newArr };
+			return { ...state, cartItems: newArr};
 		}
 		case "INC_CART_TOTAL": {
 			return {

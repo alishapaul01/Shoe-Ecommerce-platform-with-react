@@ -59,5 +59,5 @@ const SellerForm = (props) => {
 			</div>
 		</form>
 	);
-};
+}
 export default SellerForm;

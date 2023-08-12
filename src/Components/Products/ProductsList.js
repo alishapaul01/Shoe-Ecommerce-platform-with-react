@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import SingleProduct from '../Products/SingleProduct';
-import { ProductsContext } from '../Context/ProductContext'
+import { ProductsContext } from '../Context/ProductContext';
 
 const ProductsList = (props) => {
 	const { state } = useContext(ProductsContext);

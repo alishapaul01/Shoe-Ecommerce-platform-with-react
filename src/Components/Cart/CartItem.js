@@ -8,7 +8,7 @@ const CartItem = (props) => {
 	return (
 		<ul>
 			{state.cartItems.map((item) => {
-				return (
+				return(
 					<SingleCartList
 						key={item.id}
 						ShoeName={item.ShoeName}

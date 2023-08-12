@@ -11,6 +11,6 @@ const SingleCartList = (props) => {
 			<div>{props.price}</div>
 			<div>{total}</div>
 		</li>
-	);
+	)
 };
 export default SingleCartList;

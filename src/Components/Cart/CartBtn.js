@@ -7,7 +7,7 @@ const CartBtn = (props) => {
 	const onClickHandler = () => {
 		props.setCart((prevState) => !prevState);
 
-	};
+	}
 	return (
 		<button
 			className="cart-button"
